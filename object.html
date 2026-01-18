@@ -1,0 +1,50 @@
+<!-- <script>
+    let user={
+        name:"Madhura",
+        age:17,
+        isAdmin: false
+    }
+    console.log(user.age)
+</script>-->
+<input type="number" id="num1" placeholder="Enter your first number"> <br><br>
+<input type="number" id="num2" placeholder="Enter your second number"> <br><br>
+<button onclick="addNumber()"> Add </button> 
+<button onclick="subNumber()"> subtract</button> <br><br>
+    <input type="number" id="result">
+<script>
+    function addNumber(){
+        var a= Number(document.getElementById("num1").value);
+        var b= Number(document.getElementById("num2").value);
+        var sum= Number (a)+ Number(b);
+        document.getElementById("result").value=sum
+    }
+        function subNumber(){
+        var a= Number(document.getElementById("num1").value);
+        var b= Number(document.getElementById("num2").value);
+        var sub= Number(a)- Number(b);
+        document.getElementById("result").value =sub
+    }
+
+</script><br><br>
+<button id="btn">CLICK ME</button>
+<p id="msg"></p>
+<script>
+    const btn= document.getElementById("btn");
+    const ms= document.getElementById("msg");
+
+    btn.addEventListener("Click", function(){
+        msg.innerHTML +="Button clicked! <br>"
+    });
+    btn.addEventListener("keydown",function(e){
+        msg.innerHTML += e.key;
+    });
+</script>
+
+
+
+
+
+
+
+
+
